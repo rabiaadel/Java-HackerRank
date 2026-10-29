@@ -74,3 +74,53 @@ class Solution{
 }
 
 
+heres a new solution i found cuz after i thought abt again i  found out that i was right using a void method at the first lines of the code to simplify it and i did it actually and the error i found by declaring r inside a scope of the loop was my fault cuz it was just initialize r again and again with zero so heres the enhanced code from my pov
+
+import java.io.*;
+import java.util.*;
+import java.lang.Math;
+
+
+public class Solution {
+    public static void getSolution(int a,int b, int n){
+    
+    int r =0 ;
+    
+    for(int i = 0; i<n;i++)
+    {
+        r=(int)(r+Math.pow(2,i)*b);
+        System.out.print(a+r+" ");
+  
+    }
+    
+}
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        
+        int q = in.nextInt();
+        for(int i = 0;i<q;i++)
+        {
+            int a = in.nextInt();
+            int b = in.nextInt();
+            int n = in.nextInt();
+            if (q>=0&&q<=500)
+            {
+               if (a>=0&&a<=50)
+               {
+                if(b>=0&&b<=50)
+                {
+                    if(n>=1&&n<=15)
+                    {
+                       getSolution(a, b, n); 
+                       System.out.println();
+                    }
+                }
+               } 
+            }
+        }
+        in.close();
+    }
+}
+ 
+
