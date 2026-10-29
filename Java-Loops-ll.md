@@ -24,8 +24,15 @@ which is easy now to read cuz i understood it but not easy to think about how to
  the first step was that a is just treated as a constant which just need to be added in the final line so no need to put it in any loop otherwise the main loop of the app itself
 
  and the line 2exponented to a number till n-1*b is just repeaed so i knew i had to add just this line to itself till it reach its final state bby  just adding a var that holds its value and adding itself again and again "I just made a stupid mistake there where i declared that r inside the loop and it kept givin itself the value of 0 again and again this shitty error was destructive to my mind "
+ also i didnt knew taht java doesnt have that ** exponent built in function so i knew about pow method at the the math class which is imported from the java.lang.Math lib.
 
- so here came the solution and heres the code import java.util.*;
+ so here came the solution and heres the code:
+
+
+
+
+
+import java.util.*;
 import java.io.*;
 import java.lang.Math;
 
